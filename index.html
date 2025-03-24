@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Zaidan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #3a8d99, #8d6d5b);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            border-bottom: 8px solid #8d6d5b;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+
+        header h1:hover {
+            transform: scale(1.1);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        nav ul li {
+            margin: 0 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffdf00;
+        }
+
+        .section {
+            padding: 60px 20px;
+            background-color: #fff;
+            margin: 40px 0;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2a3d66;
+        }
+
+        .profile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile .description {
+            max-width: 600px;
+            text-align: left;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        .project {
+            background: #f7f7f7;
+            padding: 30px;
+            border-radius: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border: 2px solid #8d6d5b;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .project h3 {
+            font-size: 1.8rem;
+            color: #2a3d66;
+            margin-bottom: 15px;
+        }
+
+        .project p {
+            color: #555;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .social-icon {
+            font-size: 3rem;
+            color: #2a3d66;
+            transition: color 0.3s;
+        }
+
+        .social-icon:hover {
+            color: #ff6347;
+        }
+
+        footer {
+            background-color: #2a3d66;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 40px;
+            border-top: 8px solid #8d6d5b;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .profile {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .project h3 {
+                font-size: 1.4rem;
+            }
+
+            .social-links {
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">Tentang Saya</a></li>
+                <li><a href="#projects">Proyek</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="section">
+        <h2>Tentang Saya</h2>
+        <div class="profile">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS58iTyerFdO7bi-Uzil7Hs2HlCE9bNDggr8w&usqp=CAU" alt="Deskripsi gambar">
+            <div class="description">
+                <h3>Halo, saya Zaidan</h3>
+                <p>Saya adalah seorang pelajar yang sangat tertarik dengan dunia Cyber Security.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Proyek</h2>
+        <div class="project-grid">
+            <div class="project">
+                <h3>Kalkulator Python</h3>
+                <p>Sebuah kalkulator sederhana menggunakan Python yang dapat melakukan operasi dasar seperti penjumlahan, pengurangan, perkalian, dan pembagian.</p>
+            </div>
+            <div class="project">
+                <h3>IP Tracer</h3>
+                <p>Script untuk melacak lokasi dan informasi IP address menggunakan Python dan API eksternal.</p>
+            </div>
+            <div class="project">
+                <h3>Phishing</h3>
+                <p>Sebuah tools phishing yang dihubungkan dengan bot Telegram, menggunakan JavaScript, HTML, dan CSS.</p>
+            </div>
+            <div class="project">
+                <h3>Ddos</h3>
+                <p>Tools untuk membanjiri server dengan trafik berlebihan untuk pengujian keamanan.</p>
+            </div>
+            <div class="project">
+                <h3>Zenith AI</h3>
+               <p>Zenith AI adalah proyek kecerdasan buatan yang saya bangun untuk melakukan analisis data dan memprediksi hasil dengan menggunakan algoritma machine learning. Proyek ini dikembangkan menggunakan JavaScript,html dan css  dengan pustaka seperti TensorFlow dan Scikit-Learn.</p>
+              </div>
+             <div class="project">
+                 <h3>Tic-Tac-Toe Game</h3>
+                 <p>Sebuah game klasik Tic-Tac-Toe yang dibuat menggunakan JavaScrip, HTML dan CSS dengan tampilan grafis berbasis Tkinter. Pemain bisa bermain melawan komputer atau teman.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Kontak</h2>
+        <p>Untuk menghubungi saya, lihat di bawah ini!</p>
+        <div class="social-links">
+            <a href="https://github.com/limit9172" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="https://www.youtube.com/@loarrldxz" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.tiktok.com/@loard2919?_t=ZS-8uwyaAytTeS&_r=1" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+            <a href="https://wa.me/62895403397411" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            <a href="z48361363@gmail.com" class="social-icon"><i class="fab fa-google"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Zaidan. Semua hak cipta dilindungi.</p>
+    </footer>
+
+</body>
+</html>
